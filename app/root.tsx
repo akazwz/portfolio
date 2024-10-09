@@ -1,4 +1,4 @@
-import { Links, Meta, Outlet, Scripts, ScrollRestoration } from "react-router";
+import { Links, Meta, Outlet, ScrollRestoration } from "react-router";
 import "~/app.css";
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -13,7 +13,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
 			<body>
 				{children}
 				<ScrollRestoration />
-				<Scripts />
 			</body>
 		</html>
 	);
